@@ -75,4 +75,6 @@ fun main() {
     val inRes = five in 1..6// = число five(5) есть в последовательности от 1 до 6 значит true
     println(inRes)
 
+
+
 }
