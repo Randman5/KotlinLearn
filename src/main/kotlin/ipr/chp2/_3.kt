@@ -12,8 +12,8 @@ package ipr.chp2
  * если возвращаемый тип Unit то оператор return можно использовать для выхода из тела функции
  *
  * */
-fun main () {
-    val num = sum(1,2) // return 3
+fun main() {
+    val num = sum(1, 2) // return 3
     println(num)
     returnWithUnit()
 }
@@ -25,8 +25,8 @@ fun main () {
  * @param num2 второе слагаемое
  * @return сумма num1 и num2
  * */
-fun sum(num1:Int, num2:Int):Int {
-    return num1 + num2
+fun sum(a: Int, b: Int): Int {
+    return a + b
 }
 
 /**
