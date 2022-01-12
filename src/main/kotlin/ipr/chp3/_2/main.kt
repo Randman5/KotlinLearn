@@ -40,10 +40,10 @@ fun main() {
     println("${p3.name} ${p3.age}") // вывод том 23
 
     //создание объекта через вторичный конструктор 1 параметром
-    val p4 = Person3("tom",)
+    val p4 = Person3("tom")
     println("${p4.name} ${p4.age}") // вывод том 0
 
-    ////создание объекта через вторичный конструктор без параметров
+    ////создание объекта через вторичнынструктор без параметров
     val p5 = Person3()
     println("${p5.name} ${p5.age}") // вывод undefined 0
 
@@ -71,15 +71,15 @@ class Person2(_name: String) {
 
 
 // определение свойств в конструкторе
-class Person3(var name: String, var age:Int) {
+class Person3(var name: String, var age: Int) {
 
     //вторичный конструктор
-    constructor(_name:String): this(_name, 0) {
+    constructor(name: String) : this(name, 0) {
         //вызов инструкций
     }
 
     //вторичный конструктор безпараметров
-    constructor(): this("undefined", 0) {
+    constructor() : this("undefined", 0) {
         //вызов инструкций
     }
 
