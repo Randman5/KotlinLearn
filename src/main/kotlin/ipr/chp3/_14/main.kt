@@ -76,7 +76,7 @@ fun printClass(person: Person) {
 private fun getTom30Programmer() = object : Person("Tom", 30) {
     var job: String = "Programmer"
     override fun toString(): String {
-        return return "$name $age $job"
+        return "$name $age $job"
     }
 }
 
