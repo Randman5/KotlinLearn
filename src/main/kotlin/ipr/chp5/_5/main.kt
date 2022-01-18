@@ -1,14 +1,14 @@
 /**
- *
+ * Перегрузка операторов
  * */
 
-package ipr.chp5._4
+package ipr.chp5._5
 
 /**
- * *
+ * * Перегрузка операторов
+ *
  * */
 fun main() {
 
-    println((12345).firstLastUnion())// выведет 15
 
 }
