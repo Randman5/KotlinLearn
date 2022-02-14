@@ -69,3 +69,17 @@ suspend fun prodCon() = coroutineScope {
     }
 }
 
+suspend fun channeltest3() = coroutineScope<Channel<Int>> {
+    val channel = Channel<Int>()
+    launch {
+        for (n in 1..5) {
+            channel.send(n)
+            delay(400L)
+        }
+        channel.close()
+    }
+    channel
+}
+
+
+
